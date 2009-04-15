@@ -1,0 +1,41 @@
+# Logfile created on Thu Apr 16 04:23:17 +0900 2009 by /
+  [4;36;1mSQL (0.002399)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001817)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000453)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateApiUsages (1)
+  [4;36;1mSQL (0.001892)[0m   [0;1mCREATE TABLE api_usages ("id" INTEGER PRIMARY KEY NOT NULL, "api_id" varchar(32) NOT NULL, "room_id" varchar(32) DEFAULT NULL, "ticket" varchar(20) DEFAULT NULL, "used_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002357)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateRooms (2)
+  [4;35;1mSQL (0.001605)[0m   [0mCREATE TABLE rooms ("id" INTEGER PRIMARY KEY NOT NULL, "room_id" varchar(32) DEFAULT NULL, "name" varchar(255) DEFAULT NULL, "description" varchar(255) DEFAULT NULL, "url" varchar(255) DEFAULT NULL, "icon_url" varchar(255) DEFAULT NULL, "counter" integer DEFAULT NULL, "max_user_message_id" integer DEFAULT NULL, "requires_password" boolean DEFAULT NULL, "chatter_count" integer DEFAULT NULL, "observer_count" integer DEFAULT NULL, "timezone" varchar(32) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.002300)[0m   [0;1mUPDATE schema_info SET version = 2[0m
+  [4;35;1mSQL (0.000303)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateTags (3)
+  [4;36;1mSQL (0.001960)[0m   [0;1mCREATE TABLE tags ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(80) DEFAULT NULL, "display_name" varchar(80) DEFAULT NULL, "url" varchar(100) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001522)[0m   [0mUPDATE schema_info SET version = 3[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateMessages (4)
+  [4;35;1mSQL (0.001884)[0m   [0mCREATE TABLE messages ("id" INTEGER PRIMARY KEY NOT NULL, "type" varchar(32) DEFAULT NULL, "occupant_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "nickname" varchar(32) DEFAULT NULL, "new_nickname" varchar(32) DEFAULT NULL, "source" varchar(13) DEFAULT NULL, "client_type" varchar(9) DEFAULT NULL, "icon_url" varchar(255) DEFAULT NULL, "timestamp" datetime DEFAULT NULL, "room_id" varchar(32) DEFAULT NULL, "score" float DEFAULT NULL, "text" varchar(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001764)[0m   [0;1mUPDATE schema_info SET version = 4[0m
+  [4;35;1mSQL (0.000205)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateUsers (5)
+  [4;36;1mSQL (0.002305)[0m   [0;1mCREATE TABLE users ("id" INTEGER PRIMARY KEY NOT NULL, "user_id" integer DEFAULT NULL, "email" varchar(64) DEFAULT NULL, "default_nickname" varchar(32) DEFAULT NULL, "icon_url" varchar(128) DEFAULT NULL, "counter" integer DEFAULT NULL, "description" varchar(255) DEFAULT NULL, "valid" boolean DEFAULT NULL, "carrier" varchar(1) DEFAULT NULL, "uid" varchar(40) DEFAULT NULL, "password" varchar(40) DEFAULT NULL, "last_login" datetime DEFAULT NULL, "easy_login" boolean DEFAULT 'f', "created_at" datetime DEFAULT NULL, "updated_at" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001559)[0m   [0mUPDATE schema_info SET version = 5[0m
+  [4;36;1mSQL (0.000310)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateRoomsTags (6)
+  [4;35;1mSQL (0.002083)[0m   [0mCREATE TABLE rooms_tags ("room_cid" integer DEFAULT NULL, "tag_cid" integer DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001953)[0m   [0;1mUPDATE schema_info SET version = 6[0m
+  [4;35;1mSQL (0.000709)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateRoomsUsers (7)
+  [4;36;1mSQL (0.004905)[0m   [0;1mCREATE TABLE rooms_users ("room_cid" integer DEFAULT NULL, "user_cid" integer DEFAULT NULL, "room_group" varchar(16) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001903)[0m   [0mUPDATE schema_info SET version = 7[0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000504)[0m   [0mSELECT name FROM sqlite_master WHERE type = 'table'[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mPRAGMA index_list(api_usages)[0m
+  [4;35;1mSQL (0.000083)[0m   [0mPRAGMA index_list(messages)[0m
+  [4;36;1mSQL (0.000102)[0m   [0;1mPRAGMA index_list(rooms)[0m
+  [4;35;1mSQL (0.000071)[0m   [0mPRAGMA index_list(rooms_tags)[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mPRAGMA index_list(rooms_users)[0m
+  [4;35;1mSQL (0.000075)[0m   [0mPRAGMA index_list(tags)[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mPRAGMA index_list(users)[0m

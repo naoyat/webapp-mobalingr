@@ -1,0 +1,6 @@
+mobalingr - Lingr for mobile
+written on Rails
+by naoya_t
+
+* please set LINGR_API_KEY in config/environment.rb
+

@@ -1,0 +1,77 @@
+<% if @api_inited %>*<% end %>
+
+<h1>@c</h1>
+<% if @c %>
+  <%#= debug @c %>
+  api_key: <%= @c.api_key %><br />
+<!-- hostname: <%#= @c.host %><br /> -->
+  verbosity: <%= @c.verbosity %><br />
+  timeout: <%= @c.timeout %><br />
+  session_id: <%= @c.session %><br />
+
+  <br />
+  verify:
+<%
+   resp = @c.verify_session
+   if resp[:succeeded]
+%>
+     succeeded.
+     <blockquote><%= debug resp[:response] %></blockquote>
+<%
+   else
+%>
+     failed.
+<%
+   end
+%>
+<% else %>
+  not available<br />
+<% end %>
+<%#= render :partial => 'room_info' %>
+
+<h1>@ticket</h1>
+<% if @ticket %>
+  <tt><%= @ticket %></tt><br />
+<% else %>
+  not available<br/>
+<% end %>
+
+<% unless @msg.blank? %>
+  <h1>@msg</h1>
+  <%= @msg %>
+<% end %>
+
+<h1>@messages</h1>
+<% if @messages %>
+<%   @messages.each do |msg|
+       if msg['type'] == 'user'
+%>
+<img src="<%= msg['icon_url'] %>" width="24" height="24" align="absmiddle">
+<%= msg['nickname'] %> <font color="gray">at <%= msg['timestamp'] %></font><br />
+<%= msg['text'] %><br />
+<!-- occupant_id, client_type ; type, source -->
+<%#=      debug msg %>
+<%     else %>
+<p align="right"><%=      msg['nickname'] %>: <%= msg['text'] %></p>
+<%     end
+     end
+   else
+%>
+     not available<br/>
+<%
+  end
+%>
+
+<form action="/room/status" method="post">
+<input type="text" name="message" value="">
+<input type="submit">
+</form>
+
+<hr />
+
+<h1>@resp</h1>
+<% if @resp %>
+  <%= debug @resp %>
+<% else %>
+  not available<br />
+<% end %>

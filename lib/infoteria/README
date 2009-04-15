@@ -1,0 +1,7 @@
+= Lingr API Ruby Toolkit
+
+This package contains some example code showing how to use the Lingr API from a Ruby program.
+
+The #ApiClient class presents the Lingr API in a nice Ruby wrapper.  The #SampleChatClient class is a simple command-line chat program built with #ApiClient.
+
+For more details, tutorials, and community support, see the {Lingr API Reference}[http://wiki.lingr.com/dev/show/API+Reference] pages on the {Lingr Developer Wiki}[http://wiki.lingr.com].

@@ -1,0 +1,32 @@
+<table border="0" width="100%">
+<tr>
+  <td align="left">
+<%= link_to 'home', :controller => 'menu' %>
+<!--
+<% if @c.logged_in? %>
+<%=  link_to 'my stuff', :controller => 'menu' %>
+<% else %>
+<%=  link_to 'home', :controller => 'menu' %>
+<% end %>
+/
+<%= link_to 'explore' %>
+  </td>
+-->
+<td align="right">
+<% if @c.logged_in? %>
+signed in<% if default_nickname %> as <%=h default_nickname %><% end %> /
+<!-- signed in as <%#= link_to default_nickname, :controller => 'account' %> / -->
+<% else %>
+<%#=  link_to 'sign up', :controller => 'account', :action => 'signup' %>
+<% end %>
+
+<%#= link_to 'help' %>
+
+<% if @c.logged_in? %>
+  <%= link_to 'sign out', :controller => 'account', :action => 'logout' %>
+<% else %>
+  <%= link_to 'sign in', :controller => 'account', :action => 'login' %>
+<% end %>
+  </td>
+</tr>
+</table>

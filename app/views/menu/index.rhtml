@@ -1,0 +1,15 @@
+<% if flash[:notice] -%>
+  <div id='notice'><%= flash[:notice] %></div>
+<% end %>
+
+<form method="get" action="/enter">
+room id: <input type="text" name="room_id"/> <input type="submit" value="go"/>
+</form>
+
+<% if @c.logged_in? %>
+  <hr />
+  <%= render :partial => 'user_rooms' %>
+<% else %>
+  <hr />
+  <%= render :partial => 'hot_rooms' %>
+<% end %>

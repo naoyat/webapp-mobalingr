@@ -1,0 +1,54 @@
+<% if @c.logged_in? && @user %>
+<!--
+<pre>
+<%#= response['status'] %>
+<img src="<%#= response['icon_url'] %>" width="24" height="24" align="absmiddle">
+<%#= response['email'] %>
+<%#= response['counter'] %>
+<%#= response['user_id'] %>
+<%#= response['default_nickname'] %>
+<%#= response['description'] %>
+</pre>
+-->
+<%
+  visited_rooms   = @user.visited_rooms
+  favorite_rooms  = @user.favorite_rooms
+  owned_rooms     = @user.owned_rooms
+  monitored_rooms = @user.monitored_rooms
+%>
+<div align="center">
+<% if visited_rooms %><a href="#visited">visited</a> /<% end %>
+<% if favorite_rooms %><a href="#favorites">favorites</a> /<% end %>
+<% if owned_rooms %><a href="#myrooms">my rooms</a> /<% end %>
+<% if monitored_rooms %><a href="#radar">radar</a><% end %>
+</div>
+
+<% if visited_rooms %>
+<a name="visited"></a>
+<h3>visited</h3>
+<%= render :partial => 'room', :collection => visited_rooms %>
+<% end %>
+
+<% if favorite_rooms %>
+<a name="favorites"></a>
+<h3>favorites</h3>
+<%= render :partial => 'room', :collection => favorite_rooms %>
+<% end %>
+
+<% if owned_rooms %>
+<a name="myrooms"></a>
+<h3>my rooms</h3>
+<%= render :partial => 'room', :collection => owned_rooms %>
+<% end %>
+
+<% if monitored_rooms %>
+<a name="radar"></a>
+<h3>radar</h3>
+<%= render :partial => 'room', :collection => monitored_rooms %>
+<% end %>
+
+<!--
+<h3>occupied</h3>
+<%#= render :partial => 'room', :collection => session[:occupied_rooms] %>
+-->
+<% end %>

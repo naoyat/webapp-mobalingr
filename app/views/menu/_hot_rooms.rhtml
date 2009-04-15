@@ -1,0 +1,34 @@
+<!--
+<div id="oneColumn">
+  <div id="startChatting" class="columnContainer">
+<h2>start chatting:</h2>
+    <div id="hotTags">
+        <h2><a href="http://www.lingr.com/explore/hot/tags">Hot tags</a></h2>
+        <div class="tagCloud"></div>
+
+        <div class="etcetera">
+          <a href="http://www.lingr.com/explore/hot/tags/100">See more hot tags...</a>
+        </div>
+    </div>
+-->
+<div align="center">
+<% if @new_rooms %><a href="#newrooms">new rooms</a> /<% end %>
+<% if @hot_rooms %><a href="#hotrooms">hot rooms</a><% end %>
+</div>
+
+<% if @new_rooms %>
+<a name="newrooms"></a>
+<h3>New rooms</h3>
+<%= render :partial => 'room', :collection => @new_rooms %>
+<% end %>
+
+<% if @hot_rooms %>
+<a name="hotrooms"></a>
+<h3>Hot rooms</h3>
+<%= render :partial => 'room', :collection => @hot_rooms %>
+<% end %>
+
+<!--
+  </div>
+</div>
+-->

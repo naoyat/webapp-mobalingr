@@ -1,0 +1,46 @@
+<%#= render :partial => 'room_info' %>
+<%
+  @nickname = default_nickname if @nickname.blank? && @user
+%>
+
+<!-- <h3><%#= @nickname %></h3> -->
+<form action="/room/<%=h @room_id %>" method="post">
+<!-- Please choose your -->nickname:
+<input type="text" name="nickname" value="<%=h @nickname %>" size="10"><br />
+<!-- <textarea name="message" cols="72" rows="4"></textarea> -->
+<input type="text" name="message" size="72" maxlength="255">
+<input type="submit" value="Say it!">
+<%= link_to 'Leave room', :action => 'exit' %><br />
+<% if @flash[:notice] -%>
+  <div id='notice'><%= @flash[:notice] %></div>
+<% end %>
+</form>
+
+<% if @messages
+     @messages.reverse.each do |msg|
+       nickname = msg['nickname']
+       text = msg['text']
+       if msg['type'] == 'user'
+         timestamp = Time.parse(msg['timestamp']).gmtime + 60*60*9
+%>
+<img src="<%= msg['icon_url'] %>" width="24" height="24" align="top">
+<%=h nickname %> <font color="gray">at <%= timestamp.strftime('%H:%M') %></font><br />
+<%=h text %><br />
+<!-- occupant_id, client_type ; type, source -->
+<%#=      debug msg %>
+<%     else
+         text = "<em>" + nickname + "</em>" + h(text[nickname.length .. -1])
+%>
+<p align="right"><font color="gray"><%= text %></font></p>
+<%     end
+     end
+   else
+%>
+     not available<br/>
+<%
+  end
+%>
+
+<% if @counter == 20 %>
+<div align="center"><%= link_to 'read more', :room_id => @room_id, :cnt => 100 %></div>
+<% end %>

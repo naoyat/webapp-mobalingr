@@ -1,0 +1,32 @@
+<div id="oneColumn">
+<div class="columnContainer">
+
+<% if @flash[:notice] -%>
+  <div id='notice'><%= @flash[:notice] %></div>
+<% end %>
+<form action="/account/login" class="columnContent compact" method="post">
+<div class="email">
+  <label for="email" class="required">Email address:</label>
+  <input id="email" name="email" size="20" type="text" />
+</div>
+<div class="password">
+  <label for="password" class="required">Password:</label>
+  <input id="password" name="password" size="20" type="password" />
+</div>
+<div class="submit">
+  <fieldset id="keep" class="radio">
+    <input id="keep" name="keep" type="checkbox" value="1" /><input name="keep" type="hidden" value="0" /><label for="keep" class="optional">Remember me</label>
+  </fieldset>
+  <input name="commit" type="submit" value="Sign In" />
+</div>
+<!--
+<div class="other">
+  <a href="http://www.lingr.com/account/signup" class="signUp">Sign up</a>
+  <a href="http://www.lingr.com/account/reset_password">I forgot my password</a>
+</div>
+-->
+</form>
+
+<div class="clear"></div>
+</div>
+</div>

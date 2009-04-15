@@ -1,0 +1,113 @@
+<%
+if @resp
+  response = @resp[:response]
+
+  occupants = response["occupants"]
+  status    = response["status"]
+  room      = response["room"]
+%>
+<!--
+<h3>status</h3>
+<%= status %>
+-->
+
+<div id="ieWrapper">
+
+<div id="columnB">
+  <div id="aboutThisRoom" class="columnContainer">
+    <div class="columnContent">
+
+      <div id="roomDescription">
+        <%=h truncate(room['description'],30) %>
+      </div>
+
+      <div class="tagCloud">
+        <% room['tags'].each do |tag| %>
+        <%#= tag['name'] %>
+        <a href="<%= tag['url'] %>"><%=h tag['display_name'] %></a>
+        <% end %>
+      </div>
+
+      <div id="roomTimezone">
+        timezone:
+        <em><%= room['timezone'] %></em>
+      </div>
+
+      <div id="roomPrivacy">
+        privacy:
+        <em><%= room['requires_password'] ? 'private' : 'public' %></em>
+      </div>
+
+      <div id="roomOwner">
+        owner:
+        <em>***</em>
+      </div>
+
+      <div class="etcetera">
+        <div class="links">
+        </div>
+        <div class="controls">
+        </div>
+      </div>
+<!--
+<%#= room['max_user_message_id'] %><br />
+<%#= room['url'] %><br />
+<%#= room['id'] %><br />
+<%#= room['counter'] %><br />
+<%#= room['created_at'] %><br />
+-->
+    </div>
+  </div>
+
+  <div id="roster" class="columnContainer">
+    <h2>Chatters</h2>
+
+    <ul class="columnContent">
+      <li class="total ">
+<%
+  chatters = room['chatter_count'].to_i
+  if chatters > 0
+%>
+  <%= chatters %> chatter<% if chatters > 1 %>s<% end %>
+<%
+  end
+  observers = room['observer_count'].to_i
+  if observers > 0
+    if chatters > 0
+      %>+<%
+    end
+%>
+  <%= observers %> observer<% if observers > 1 %>s<% end %>
+<%
+  end
+%>
+      </li>
+
+<%
+  occupants.each do |occupant|
+    unless occupant['nickname'].blank?
+%>
+      <li id="roster-**********" class="<%=h occupant['client_type'] %>">
+        <img src="<%= occupant['icon_url'] %>" width="24" height="24" align="absmiddle">
+        <a class="handle" href="#">
+          <span id="roster-handle-**********"><%=h occupant['nickname'] %></span>
+          <!-- - <%=h occupant['description'] %> -->
+        </a>
+      </li>
+<!--
+id: <%#=h occupant['id'] %><br />
+user id: <%#=h occupant['user_id'] %><br />
+source: <%#=h occupant['source'] %><br />
+-->
+<%
+    end
+  end
+%>
+    </ul>
+  </div>
+</div>
+
+</div>
+<%
+end
+%>

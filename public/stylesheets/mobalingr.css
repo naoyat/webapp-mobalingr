@@ -1,0 +1,66 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {margin: 0; padding: 0}
+body {padding: 0 3px; color: #000; background: #fff url(/images/backgrounds/gradient-pale-orange.gif) repeat-x 0 0 fixed; font: 13px 'Gill Sans', Verdana, Arial, Helvetica, clean, sans-serif}
+body * {line-height: 1.22em}
+.clear {clear: both}
+ol, ul {list-style: none}
+table {border-collapse: collapse; border-spacing: 0}
+fieldset, img, a img, abbr, acronym {border: 0}
+address, caption, cite, code, dfn, em, strong, th, var {font-style: normal; font-weight: normal}
+pre, code {font: 115% monospace}
+select, input, textarea {font: 99% 'Gill Sans', Verdana, Arial, Helvetica, clean, sans-serif}
+table {font-size: inherit; font: 100%}
+caption, th {text-align: left}
+q:before, q:after {content: ''}
+a {color: #168; text-decoration: none}
+a:focus, a:hover, .globalMenu #welcome a:focus, .globalMenu #welcome a:hover, #footer #bureaucracy li a:focus, #footer #bureaucracy li a:hover {color: #d80}
+form .required {color: #840}
+form .optional, form .note em {color: #885}
+form label em {color: #d70}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal}
+h1, h1 a, h2, h2 a {color: #d70}
+h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover {color: #840}
+h1 {font-family: 'Georgia', 'Times', sans-serif; font-size: 182%; letter-spacing: 2px}
+h2 {font-size: 144%; letter-spacing: 2px}
+h2 span {text-transform: none}
+h3 {color: #cb7500; font-size: 144%; line-height: 1.1}
+#everything {width: 75em; max-width: 100%; margin: 0 auto}
+#globalHeader {float: left; position: relative; width: 100%; padding: 1em 0 0.75em}
+#globalHeader h1 {clear: both; float: left; vertical-align: bottom; margin: 0 89px 0 0; padding-right: 1em; text-align: left}
+#globalHeader .image h1 {margin-top: -0.25em}
+#globalHeader h1 img {vertical-align: middle; margin-right: 0.25em}
+#globalHeader #logo {position: absolute; top: -0.35em; right: 0}
+#flash {clear: both; margin-bottom: 1.5em; padding: 1em 0 0.5em; background: #fff; border: solid #d4dee3; border-width: 1px 0; text-align: center}
+#flash em {display: block; margin: 0 15%; padding-bottom: 0.5em; color: #c62200; line-height: 1}
+#flash .error, #flash .notice {font-size: 144%}
+#flash .notice, #flash .subNotice {color: #780}
+#flash .subError, #flash .subNotice {font-size: 122%}
+#flash.error .notice {margin-top: 0.25em; padding-top: 0.5em; border-top: 1px solid #eff}
+.globalMenu {position: relative; margin-bottom: 0.35em; line-height: 1}
+.globalMenu li.topLevel {float: left}
+.globalMenu .topLevel .topLevel, .globalMenu #welcome {font-size: 114%}
+.globalMenu #welcome {color: #aeb261; text-transform: none}
+.globalMenu #welcome a {color: #366}
+body #oneColumn {position: relative; width: 100%; max-width: 42em; margin: 0 auto}
+#columnA {float: left; width: 58%}
+#columnB {float: right; width: 40%}
+.columnContainer {clear: both; width: 100%; margin-bottom: 1em}
+h2 {padding: 0 0.15em 0.6em; text-align: center}
+#columnB h2 {padding-bottom: 0.1em}
+#columnB h2, #columnB h2 a {letter-spacing: 1px; text-transform: lowercase}
+.columnContent {padding: 0.5em 1.5em; color: #333}
+#footer {clear: both; padding: 1em 0}
+#footer #bureaucracy {text-align: center}
+#footer #bureaucracy li {display: inline}
+#footer #bureaucracy li a {padding: 0.5em; color: #bb6; line-height: 1}
+#footer #copyright {padding-top: 1em; color: #dd8; font-size: 92%; line-height: 1; text-align: center}
+.tag, .tag1 {font-size: 92%}
+.tag2 {font-size: 100%}
+.tag3 {font-size: 107%}
+.tag4 {font-size: 122%}
+.tag5 {font-size: 144%}
+.tag6 {font-size: 167%}
+.tag7 {font-size: 182%}
+.tag8 {font-size: 210%}
+ol.pages .static {padding: 0.25em 0.5em; color: #555}
+ol.pages li a {float: left; margin-right: 2px; padding: 0.25em 0.5em; border: 1px solid transparent}
+ol.pages li a:focus, ol.pages li a:hover {background: #eff url(/images/backgrounds/gradient-blue.gif) repeat-x left -20px; border: 1px solid; border-color: #eee #ccc #ccc #eee}

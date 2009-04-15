@@ -1,0 +1,51 @@
+<% case request.mobile
+   when Jpmobile::Mobile::Docomo -%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<% when Jpmobile::Mobile::Au -%>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//OPENWAVE//DTD XHTML 1.0//EN"
+ "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<% when Jpmobile::Mobile::Softbank -%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<% when Jpmobile::Mobile::Willcom -%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<% else -%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<% end -%>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title><%= @title || 'mobaLingr' %></title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="Stylesheet" href="/stylesheets/mobalingr.css" type="text/css" media="screen" />
+</head>
+
+<body id="enter" class="room signedIn notArchives">
+  <div id="everything">
+    <div id="globalHeader">
+      <%= render :partial => 'layouts/head' %>
+
+<!-- <table border=1><tr><td><%#= debug @user %></td></tr></table> -->
+
+      <div id="pageHeader">
+        <div class="headerWrapper">
+          <% if @resp && @resp[:response] && @resp[:response]['room']
+             room = @resp[:response]['room'] %>
+        <h1><img src="<%= room['icon_url'] %>" width="24" height="24" align="absmiddle"><%=h room['name'] %></h1>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+    <%= @content_for_layout %>
+
+    </div>
+  </div>
+
+<hr />
+<div align="center">mobaLingr &copy; 2007 naoya_t.
+Powered by <a href="http://www.lingr.com/">Lingr</a></div>
+</body>
+</html>

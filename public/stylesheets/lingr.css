@@ -1,0 +1,326 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {margin: 0; padding: 0}
+body {min-width: 511px; padding: 0 32px; color: #000; background: #fffff4 url(http://4.assets.lingr.com/images/backgrounds/gradient-pale-orange.gif.v1197607815) repeat-x 0 0 fixed; font: 13px 'Gill Sans', Verdana, Arial, Helvetica, clean, sans-serif}
+body * {line-height: 1.22em}
+.clear {clear: both}
+ol, ul {list-style: none}
+table {border-collapse: collapse; border-spacing: 0}
+fieldset, img, a img, abbr, acronym {border: 0}
+address, caption, cite, code, dfn, em, strong, th, var {font-style: normal; font-weight: normal}
+pre, code {font: 115% monospace}
+select, input, textarea {font: 99% 'Gill Sans', Verdana, Arial, Helvetica, clean, sans-serif}
+table {font-size: inherit; font: 100%}
+caption, th {text-align: left}
+q:before, q:after {content: ''}
+a {color: #0f5887; text-decoration: none}
+a:focus, a:hover, .globalMenu #welcome a:focus, .globalMenu #welcome a:hover, #footer #bureaucracy li a:focus, #footer #bureaucracy li a:hover {color: #de8000}
+form .required {color: #793b00}
+form .optional, form .note em {color: #7b7e54}
+form label em {color: #cb7500}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal}
+h1, h1 a, h2, h2 a, #loginDialog strong {color: #cb7500}
+h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover {color: #793b00}
+h1 {font-family: 'Georgia', 'Times', sans-serif; font-size: 182%; letter-spacing: 2px}
+h2, #loginDialog strong {font-size: 144%; letter-spacing: 2px}
+h2 span {text-transform: none}
+h3 {color: #cb7500; font-size: 144%; line-height: 1.1}
+#everything {width: 75em; max-width: 100%; margin: 0 auto}
+.notArchives #everything {position: relative}
+#globalHeader {float: left; position: relative; width: 100%; padding: 1em 0 0.75em}
+body.globalMessage #globalHeader {padding-top: 0.5em}
+#globalMessage {position: relative; z-index: 1; margin: 0 -0.25em 0.6em; padding: 0.5em 0; color: #793b00; background: #fff url(http://2.assets.lingr.com/images/backgrounds/gradient-green-short.png.v1197607815) repeat-x left bottom; border: solid #d4dee3; border-width: 1px 0; text-align: center}
+.hideGlobalMessage {position: absolute; top: 50%; right: 10px; width: 10px; height: 10px; margin-top: -5px; background: #fff url(http://2.assets.lingr.com/images/room/remove-tag.png.v1197607816) no-repeat 0 0}
+.hideGlobalMessage:focus, .hideGlobalMessage:hover {background-position: -10px 0}
+#globalMessage p {margin: 0 5em; line-height: 1}
+#pageHeader {position: relative; clear: both; float: left; width: 100%; padding-bottom: 0.5em}
+#pageHeader.image {padding-bottom: 0}
+#globalHeader h1 {clear: both; float: left; vertical-align: bottom; margin: 0 89px 0 0; padding-right: 1em; text-align: left}
+#globalHeader .image h1 {margin-top: -0.25em}
+#globalHeader h1 img {vertical-align: middle; margin-right: 0.25em}
+#globalHeader #logo {position: absolute; top: -0.35em; right: 0}
+#flash {clear: both; margin-bottom: 1.5em; padding: 1em 0 0.5em; background: #fff; border: solid #d4dee3; border-width: 1px 0; text-align: center}
+#flash em {display: block; margin: 0 15%; padding-bottom: 0.5em; color: #c62200; line-height: 1}
+#flash .error, #flash .notice {font-size: 144%}
+#flash .notice, #flash .subNotice {color: #768000}
+#flash .subError, #flash .subNotice {font-size: 122%}
+#flash.error .notice {margin-top: 0.25em; padding-top: 0.5em; border-top: 1px solid #e7f8fb}
+.globalMenu {position: relative; margin-bottom: 0.35em; line-height: 1}
+#globalActionsA {float: right; z-index: 2; margin-right: -0.65em}
+#globalActionsB {float: left; z-index: 2; margin-left: -0.65em}
+.globalMenu li.topLevel {float: left}
+.globalMenu .menuOuterWrapper, .globalMenu .topLevel .topLevel, .globalMenu #welcome {display: block; float: left; margin-right: 3px; padding: 0.3em 0.5em; border: 1px solid transparent; text-decoration: none}
+.globalMenu .topLevel .topLevel, .globalMenu #welcome {font-size: 114%}
+.globalMenu #welcome {color: #aeb261; text-transform: none}
+.globalMenu #welcome a {color: #366564}
+.globalMenu #signIn .topLevel, .globalMenu #logout .topLevel {margin-right: 0}
+.globalMenu #signIn, .globalMenu #login a {position: relative; z-index: 5}
+.globalMenu #shade {position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; background: #ffffe1}
+.globalMenu .menuOuterWrapper {position: relative; padding: 0}
+.globalMenu .menuOuterWrapper .topLevel {margin: 0; background: transparent url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) no-repeat -2px -20px; border: 0; padding-right: 22px}
+.globalMenu .menuOuterWrapper:focus, .globalMenu .menuOuterWrapper:hover, .globalMenu .menuOuterWrapper.hover, .globalMenu .menuOuterWrapper.active, .globalMenu .topLevel .topLevel:focus, .globalMenu .topLevel .topLevel:hover, .globalMenu .topLevel.active .topLevel {background: #e1f6fa url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left 0; border-color: #eee #ccc #ccc #eee}
+.globalMenu .menuOuterWrapper.active {background: #fff; border-bottom-color: #fff}
+.globalMenu .menuOuterWrapper.active .topLevel, .globalMenu .topLevel.active .topLevel {color: #de8000; background: #fff}
+.menuArrow {display: block; position: absolute; top: 55%; right: 4px; width: 11px; height: 6px; margin-top: -3px; background: transparent url(http://1.assets.lingr.com/images/arrows/down.gif.v1197607816) no-repeat 0 -6px; cursor: pointer}
+.globalMenu .menuOuterWrapper:focus .menuArrow, .globalMenu .menuOuterWrapper:hover .menuArrow, .globalMenu .menuOuterWrapper.hover .menuArrow {background-position: -11px -6px}
+.globalMenu .menuOuterWrapper.active .menuArrow {background-position: -11px 0}
+.menuWrapper {display: none; position: absolute; top: 2em; left: -1px; z-index: 1; background-color: #fff; border: 1px solid #ccc; border-top: 0; border-left-color: #eee}
+.menuWrapper.active {display: block}
+.menuWrapper li {text-align: left; white-space: nowrap}
+.menuWrapper li a {display: block; padding: 0.3em 1.5em 0.3em 1em; text-decoration: none}
+.menuWrapper .first a, .menuWrapper .only a {padding-top: 0.4em; border-top: 1px solid #ddd}
+.menuWrapper .last a, .menuWrapper .only a {padding-bottom: 0.45em}
+.menuWrapper li a:focus, .menuWrapper li a:hover {background: #f3fdfd}
+#loginDialog {position: fixed; top: 2.76em; right: 30px; z-index: 100; width: 22em; margin: 3px -0.65em 0 0; padding-left: 2px; background: #d4dee3}
+#loginDialogForm {float: left; position: relative; right: 2px; bottom: 2px; width: 100%; margin-left: -2px; background-color: #fff; border: 1px solid; border-color: #b3c7cf #7e949e #7e949e #b3c7cf}
+#loginDialog strong {float: left; margin: 8px 0 12px 12px}
+#loginDialog .cancel {float: right; margin: 8px 12px 0 0; line-height: 1.6; text-align: right}
+#loginDialogMessage {display: block; clear: both; margin: 0 12px 12px; color: #c62200; font-size: 122%; line-height: 1; text-align: center}
+#loginDialogForm ol {margin: 0 12px 8px}
+#loginDialogForm li {clear: both; float: left; width: 100%}
+#loginDialogForm li label, #loginDialogForm li input, #loginDialogForm li a {line-height: 1.3}
+#loginDialogForm li label {text-transform: lowercase}
+#loginDialogForm .email {padding-bottom: 0.5em}
+#loginDialogForm .password {padding-bottom: 1em}
+#loginDialogForm .email label, #loginDialogForm .password label {float: left; width: 37%; text-align: right}
+#loginDialogForm .email label, #loginDialogForm .password label {position: relative; top: 2px}
+.error #loginDialogForm .email label, .error #loginDialogForm .password label {color: #c62200}
+#loginDialogForm .email input, #loginDialogForm .password input {float: right; width: 60%}
+#loginDialogForm .keep {float: left; width: 45%; padding: 0 0 0.75em 1em}
+#loginDialogForm .keep label, #loginDialogForm .keep input {float: none; width: auto; text-align: left}
+#loginDialogForm .submit {float: right; clear: none; width: 49%; padding: 0 0 0.75em; text-align: right}
+#loginDialogForm .submit img {vertical-align: middle; margin: 0 4px}
+#loginDialogForm .resetPassword {margin-bottom: 1em; text-align: center}
+body #oneColumn {position: relative; width: 100%; max-width: 42em; margin: 0 auto}
+#columnA {float: left; width: 58%}
+#columnB {float: right; width: 40%}
+.columnContainer {clear: both; width: 100%; margin-bottom: 1em}
+h2 {padding: 0 0.15em 0.6em; text-align: center}
+#columnB h2 {padding-bottom: 0.1em}
+#columnB h2, #columnB h2 a {letter-spacing: 1px; text-transform: lowercase}
+.columnContent {padding: 0.5em 1.5em; color: #333}
+#columnB .tagsWrapper .tagCloud {padding: 0.1em 0 0; border: solid #eee; border-width: 1px 1px 0 0}
+#columnB .tagsWrapper .etcetera {width: 100%; border-right: 1px solid #eee}
+#footer {clear: both; padding: 1em 0}
+#footer #bureaucracy {text-align: center}
+#footer #bureaucracy li {display: inline}
+#footer #bureaucracy li a {padding: 0.5em; color: #aeb261; line-height: 1}
+#footer #copyright {padding-top: 1em; color: #cdd27d; font-size: 92%; line-height: 1; text-align: center}
+.exploreMenu {float: left; width: 100%}
+.tagsWrapper .exploreMenu {border-bottom: 1px solid #eee}
+.exploreMenu a {float: left; position: relative; top: 1px; z-index: 1; padding: 0.3em 0.75em 0.4em; border: 1px solid transparent; border-bottom-color: #eee; font-size: 122%; line-height: 1; letter-spacing: 1px; text-transform: lowercase}
+.exploreMenu a:focus, .exploreMenu a:hover {background: #e1f6fa url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left -20px; border-color: #eee #ccc #eee #eee}
+#hot_tags .exploreMenu .hotTags, #explore .exploreMenu .hotRooms, #hot_rooms .exploreMenu .hotRooms, #new_rooms .exploreMenu .newRooms, #my_rooms .exploreMenu .myRooms, #index .exploreMenu .visitedRooms, #visited .exploreMenu .visitedRooms, #favorites .exploreMenu .favoriteRooms, #radar .exploreMenu .radar {color: #de8000; background: #fffff3 url(http://3.assets.lingr.com/images/backgrounds/gradient-ivory.png.v1197607815) repeat-x left top; border-color: #eee #ccc #fff #eee; cursor: pointer}
+#explore .exploreMenu .hotRooms, #hot_rooms .exploreMenu .hotRooms, #new_rooms .exploreMenu .newRooms, #my_rooms .exploreMenu .myRooms, #index .exploreMenu .visitedRooms, #visited .exploreMenu .visitedRooms, #favorites .exploreMenu .favoriteRooms, #radar .exploreMenu .radar {background: #fff}
+.tagCloud, form #tagCloud {overflow: hidden; text-align: left}
+.tagCloud {width: 100%}
+form #tagCloud {padding-bottom: 0.25em}
+.tagCloud a, #tagCloud span {background: #fff; border: 1px solid; border-color: #eee #ccc #ccc #eee}
+.tagCloud a {overflow: hidden; margin-bottom: 2px; padding: 4px 0.5em; line-height: 1.75; white-space: nowrap}
+.tagCloud a:focus, .tagCloud a:hover {background: #e1f6fa url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left -20px}
+#tagCloud span {display: block; overflow: hidden; position: relative; float: left; margin: 0 3px 2px 0; padding: 0.3em 20px 0.3em 0.5em; line-height: 1}
+.tag, .tag1 {font-size: 92%}
+.tag2 {font-size: 100%}
+.tag3 {font-size: 107%}
+.tag4 {font-size: 122%}
+.tag5 {font-size: 144%}
+.tag6 {font-size: 167%}
+.tag7 {font-size: 182%}
+.tag8 {font-size: 210%}
+#everything .matchedTag, #everything .partialMatchedTag, .matchedTerm {background: #ceffc6}
+#tagCloud .delete {position: absolute; top: 50%; right: 5px; width: 10px; height: 10px; margin-top: -5px; background: #fff url(http://2.assets.lingr.com/images/room/remove-tag.png.v1197607816) no-repeat 0 0}
+#tagCloud .delete:focus, #tagCloud .delete:hover {background-position: -10px 0}
+#tagCloud .tag {font-size: 100%}
+.roomList, .noRooms {clear: both; position: relative; padding: 0.25em 0.4em; background: #fff; border: solid #eee; border-width: 1px 0}
+.noRooms {padding-top: 0.75em; padding-bottom: 0}
+.noRooms p, .noRooms .etcetera {margin: 0 0.5em 0.25em; font-size: 107%; line-height: 1.3; text-transform: none}
+.roomList .room {position: relative; min-height: 48px; padding: 0.5em 0; border-bottom: 1px solid #eee}
+.roomList .room.last {border: 0}
+.roomList .room:focus, .roomList .room:hover, .roomList .room.hover {background: #f3fdfd url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left bottom}
+.roomList .room.detailed {margin-bottom: 2px; background: #e1f6fa url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left top}
+.roomList .room * {word-wrap: break-word}
+.roomList .room .overview {position: relative; padding: 0.15em 28px 0.15em 62px}
+.roomList .room.titleOnly .overview {padding-bottom: 0}
+.roomList .room.extraControl .overview {padding-right: 56px}
+.roomList .room .roomImage {position: absolute; top: 0; left: 5px}
+.roomList .room h3 a {position: relative; display: block; padding: 0 0.25em 0.25em 0}
+.roomList .room h3 a:focus, .roomList .room h3 a:hover {color: #de8000}
+.roomList .room h3 img {margin-left: 8px}
+.roomList .room h3 .passwordProtected {vertical-align: bottom}
+.roomList .room .activity, .roomList .room .description {padding: 0; font-size: 100%; line-height: 1}
+.roomList .room .activity {padding: 0.1em 0 0.3em; color: #801500}
+.roomList .room .extended, .roomList .room.detailed .descriptionExtender {display: none}
+.roomList .room.detailed .extended {display: inline}
+.roomList .room .extraControl, .roomList .room .detailsToggle {position: absolute; top: 1em; width: 16px; height: 16px; background: transparent no-repeat}
+.roomList .room .extraControl.deleteControl {right: 28px; background: url(http://2.assets.lingr.com/images/list/delete.png.v1197607816) 0 0}
+.roomList .room:focus .deleteControl, .roomList .room:hover .deleteControl, .roomList .room.hover .deleteControl, .roomList .room.detailed .deleteControl {background-position: 16px 0}
+.roomList .room .deleteControl:focus, .roomList .room .deleteControl:hover {background-position: 0 16px}
+.roomList .room .settings {right: 28px; background: url(http://3.assets.lingr.com/images/list/settings.png.v1197607816) 0 0}
+.roomList .room:focus .settings, .roomList .room:hover .settings, .roomList .room.hover .settings, .roomList .room.detailed .settings {background-position: 16px 0}
+.roomList .room .settings:focus, .roomList .room .settings:hover {background-position: 0 16px}
+.roomList .room .detailsToggle {right: 6px; background: url(http://3.assets.lingr.com/images/list/info.png.v1197607816) 0 0}
+.roomList .room:focus .detailsToggle, .roomList .room:hover .detailsToggle, .roomList .room.hover .detailsToggle {background-position: 16px 0}
+.roomList .room .detailsToggle:focus, .roomList .room .detailsToggle:hover {background-position: 0 16px}
+.roomList .room.detailed .detailsToggle {background: url(http://2.assets.lingr.com/images/arrows/up.png.v1197607816) 0 0}
+.roomList .room.detailed .detailsToggle:focus, .roomList .room.detailed .detailsToggle:hover {background-position: 0 16px}
+.roomList .room .details {margin: 0 6px 0 4px; padding-top: 0.25em}
+.roomList .room .tagCloud {overflow: hidden; position: relative; padding: 0.2em 0 0.5em}
+.roomList .room.titleOnly .tagCloud {padding-top: 0.5em}
+.roomList .room .tagCloud .tag {top: 0; font-size: 92%; line-height: 2.2}
+.roomList .room .owner {margin-bottom: 0.1em; padding: 0; color: #888; font-size: 92%; line-height: 1; text-align: right}
+.roomList .room .owner span {color: #333; font-style: normal}
+.roomList .room .etcetera {clear: both; padding: 0; color: #888; font-size: 92%; line-height: 1; text-align: center; text-transform: lowercase}
+.results {padding: 0}
+.results .roomGroup {clear: both; position: relative; margin-bottom: 1em; padding: 0.3em 0; background: #fffff3; border: solid #eee; border-width: 1px 0}
+.results .roomGroup.detailed {background: #f3fdfd}
+.results .roomGroup * {word-wrap: break-word}
+.results .roomInfo {overflow: hidden; position: relative}
+.results .roomInfo .overview, .results .roomInfo .details {margin: 0 0.75em}
+.results .roomInfo .details {margin-top: -0.5em; padding-bottom: 0.5em}
+.results .roomInfo h3 {vertical-align: middle; color: #888; font-size: 122%; line-height: 1.2; unicode-bidi: bidi-override}
+.results .roomInfo h3 * {vertical-align: baseline}
+.results .roomInfo h3 a {unicode-bidi: embed}
+.results .roomInfo h3 img {vertical-align: middle; margin: 0 4px 0.15em 0}
+.results .roomInfo h3 em {color: #555}
+.results .roomInfo .activity, .results .roomInfo .description {font-size: 100%; line-height: 1.1}
+.results .roomInfo .activity {padding: 0.1em 0 0.1em 36px; color: #801500}
+.results .roomInfo .description {padding: 0 0 0.35em 36px}
+.results .roomInfo .detailsToggle {position: absolute; top: 7px; right: 0.75em; width: 16px; height: 16px; background: transparent url(http://3.assets.lingr.com/images/list/info.png.v1197607816) 0 0}
+.results .roomInfo .detailsToggle:focus, .results .roomInfo .detailsToggle:hover {background-position: 0 16px}
+.results .room.detailed .roomInfo .detailsToggle {background-image: url(http://2.assets.lingr.com/images/arrows/up.png.v1197607816)}
+.results .roomInfo .tagCloud {overflow: hidden; position: relative; padding: 0.2em 0 0.5em}
+.results .roomInfo .tagCloud .tag {top: 0; font-size: 92%; line-height: 2.2}
+.results .roomInfo .etcetera {clear: both; padding: 0; color: #888; font-size: 92%; line-height: 1; text-align: center; text-transform: lowercase}
+.results .roomInfo .owner {padding: 0; color: #888; font-size: 92%; line-height: 1; text-align: right}
+.results .roomInfo .owner span {color: #333; font-style: normal}
+.results .days {margin: 0 0.75em 0.5em; background: #fff; border: solid #eee; border-width: 1px 0}
+.results .days.more {padding-bottom: 0.6em}
+.results .day {padding-top: 0.4em; border-bottom: 1px solid #eee}
+.results .days.more .day, .results .singleRoom .day {padding-bottom: 0.3em}
+.results .day.even {background: #fffff3}
+.results .day.first {padding-top: 0.35em; border: 0}
+.results .days.more .day.first, .results .singleRoom .day.first {border-bottom: 1px solid #eee}
+.results .day.last {margin-bottom: 0.8em}
+.results .singleRoom .day.last {margin-bottom: 0; border: 0}
+.results .day h4 {padding: 0 0.6em; color: #c19b68; text-align: right; font-size: 107%; line-height: 1.1}
+.results .seeMore {display: block; margin-top: -0.1em; padding-bottom: 0.3em; text-align: center; line-height: 1.1}
+.results .more .seeMore, .results .singleRoom .seeMore {margin-top: 0}
+.results .messages .seeMore {display: none}
+.results .roomGroup.oneDay .messages .seeMore, .results .days.more .messages .seeMore, .results .singleRoom .messages .seeMore {display: block}
+.results a.message {overflow: hidden; display: block; min-height: 26px; margin: -0.2em 0 0 1px; padding: 0.2em 0.75em 0; color: #222; background: #fff}
+.results .day.odd a.message.even, .results .day.even a.message.odd {background: #fffff3}
+.results .messages.more a.message {margin-top: 0}
+.results .messages.more a.message.notFirst {padding-top: 0.5em; border-top: 1px solid #eee}
+.results a.message.last {border: 0}
+.results a.message.last.even {border-bottom: 1px solid #eee}
+.results .messages.more a.message.last {margin-bottom: 0.5em}
+.results .roomGroup .day .messages a.message:focus, .results .roomGroup .day .messages a.message:hover {background: #f3fdfd url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left bottom}
+.results a.message .result {display: block}
+.results a.message .result {padding-bottom: 0.2em}
+.results a.message .handle {display: block; position: relative; padding: 0 0 0.3em 34px}
+.results a.message .handle .timestamp {float: right; color: #c19b68; font-size: 92%; line-height: 1.33}
+.results a.message .handle img {position: absolute; top: 0; left: 0}
+.results a.message .handle .handleText {color: #793b00; line-height: 0.75}
+.results .me a.message .handle .handleText {color: #768000}
+.results a.message .text {display: block; padding: 0 0 0.2em 34px; font-size: 122%; line-height: 1.1}
+.results a.message .text em {background: #ceffc6}
+.etcetera {padding: 0.5em 0; text-align: center; text-transform: lowercase}
+.etcetera .feed {float: right; text-align: left}
+.etcetera.twoColumn .feed {max-width: 35%}
+.etcetera .feed span {display: block; float: left; width: 16px; height: 16px; margin-right: 0.3em; background: transparent url(http://1.assets.lingr.com/images/shared/feed.gif.v1197607815) no-repeat 0 0; cursor: pointer}
+.etcetera .feed:focus span, .etcetera .feed:hover span, .etcetera .feed.hover span {background-position: 0 -16px}
+.etcetera .pages, .etcetera .tagLimits {float: left; padding-left: 1em}
+.etcetera .pages {width: 60%; text-align: left}
+.etcetera .tagLimits {width: 100%}
+ol.pages li, ol.tagLimits li {float: left}
+ol.pages .static, ol.tagLimits .static {padding: 0.25em 0.5em; color: #555}
+ol.pages li a, ol.tagLimits li a {float: left; margin-right: 2px; padding: 0.25em 0.5em; border: 1px solid transparent}
+ol.pages li a:focus, ol.pages li a:hover, ol.tagLimits li a:focus, ol.tagLimits li a:hover, ol.pages .currentPage a, ol.tagLimits .currentLimit a {background: #e1f6fa url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left -20px; border: 1px solid; border-color: #eee #ccc #ccc #eee}
+ol.pages .currentPage a, ol.pages .currentPage a:focus, ol.pages .currentPage a:hover, ol.tagLimits .currentLimit a, ol.tagLimits .currentLimit a:focus, ol.tagLimits .currentLimit a:hover {color: #de8000; background: #fff; cursor: pointer}
+.columnContent p {padding-bottom: 0.75em; font-size: 122%}
+.columnContent p.pull, .columnContent p.scream, .columnContent p.finePrint {margin-bottom: 0.75em; padding: 0.25em 0.5em; color: #793b00; background: #f3fdfd}
+.columnContent p.withFollowing {margin-bottom: 0}
+.columnContent p.pull, .columnContent p.scream, .columnContent p.blurb {font-size: 144%}
+.columnContent p.scream {color: #801500; text-align: center}
+.columnContent p.blurb {color: #805f40}
+.columnContent p.instructions {color: #793b00}
+.columnContent p.smallPrint {color: #888; font-size: 100%}
+.columnContent p.detail {padding-top: 1em; color: #888; border-top: 1px solid #eee; font-size: 122%; text-align: center}
+.columnContent p strong {color: #768000; white-space: nowrap}
+.columnContent p em {color: #801500}
+form.search {padding: 1em 0 0.75em; background: #fffff3 url(http://3.assets.lingr.com/images/backgrounds/gradient-ivory-short.gif.v1197607815) repeat-x left bottom; border: solid #eee; border-width: 1px 0; text-align: center}
+.searchModule form.search {padding: 0.8em 0 0.25em}
+form.search * {vertical-align: top}
+form.search label.query {position: relative; top: 0.1em; padding-right: 0.15em; color: #793b00; font-size: 144%}
+form.search fieldset {display: inline; text-align: left}
+form.search #query {margin: 0 0.1em 0.3em 0; font-size: 144%; line-height: 1.3}
+form.search fieldset fieldset {display: block; margin-left: 0.15em; color: #555}
+form.search fieldset fieldset label, form.search fieldset fieldset input {vertical-align: middle; font-size: 92%; line-height: 1}
+form.search fieldset fieldset input {margin-right: 2px}
+form.search #search_type_rooms {margin-left: 0.5em}
+form.search label.searchTypeRoomArchives {margin-right: 0.5em}
+form.search p {padding-bottom: 0.4em; color: #888; font-size: 92%; line-height: 1.1}
+form.search p em {vertical-align: baseline; font-style: italic}
+.searchModule {margin-top: 2.18em; text-align: center}
+.searchModule label {padding-right: 0.25em}
+.searchModule #query {width: 50%; font-size: 144%; line-height: 1.3}
+.searchModule #searchSubmit {margin-bottom: 0.2em}
+#createRoomModule h2 {font-size: 100%; line-height: 1; text-align: center; text-shadow: 2px 2px 2px #ccc}
+#createRoomModule a {display: block; padding: 0.3em 0.5em 0.4em; background: #f3fdfd url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left bottom; border: solid #d4dee3; border-width: 1px 0; font-size: 144%}
+#createRoomModule a:focus, #createRoomModule a:hover {color: #805f40; background-color: #e1f6fa; background-position: left top}
+#radarModule h2 {font-size: 100%; text-transform: none; text-align: left; letter-spacing: 1px; text-shadow: 2px 2px 2px #ccc}
+#radarModule a {display: block; float: left; position: relative; width: 100%; min-height: 32px; padding: 0.3em 0 0.4em; background: #f3fdfd url(http://4.assets.lingr.com/images/backgrounds/gradient-blue.gif.v1197607815) repeat-x left bottom; border: solid #d4dee3; border-width: 1px 0}
+#radarModule a:focus, #radarModule a:hover {color: #805f40; background-color: #e1f6fa; background-position: left top}
+#radarModule .name {float: left; padding: 0.15em 0.4em 0 0; font-size: 1.6em}
+#radarModule .tagline {float: left; padding-right: 0.5em}
+#radarModule .clear {display: block; height: 0}
+#radarModule img {float: left; margin: 0 4px}
+#oneColumn.search, body.tips#videos #oneColumn {max-width: 50em}
+body.account#signup #oneColumn, body.account#confirm #oneColumn, #oneColumn.errorPages {max-width: 36em}
+body.room#full #oneColumn, body.room#get_password #oneColumn {max-width: 32em}
+body.account#login #oneColumn, body.account#reset #oneColumn, body.account#reset_password #oneColumn {max-width: 28em}
+body.room#get_password p.pull {overflow: hidden; word-wrap: break-word}
+body.room#related h2 {padding-bottom: 0.75em}
+body#create_badge #oneColumn {text-align: center}
+body#create_badge .columnContainer {background: #fff; border: solid #eee; border-width: 1px 0}
+body#create_badge .lingrBadge {margin: 0 auto 0.75em !important}
+body#create_badge #oneColumn p {padding-bottom: 0.5em; font-size: 122%}
+body#create_badge textarea {width: 90%; margin-bottom: 1em; color: #801500}
+body#create_badge #styleHint {text-align: left}
+body#create_badge #styleSample {margin: 0.4em 1em; padding: 0.5em 1em 0.6em; color: #801500; border: 1px solid #888}
+body.room#full .columnContainer {padding: 1em 0; background: #fff; border: solid #eee; border-width: 1px 0}
+body.room#full .blurb {padding-bottom: 0.75em; text-align: center}
+body#hot_tags .searchModule {margin-top: 0.1em}
+#oneColumn.search h2 {padding: 0.75em 0 0.25em; text-transform: none}
+body.search#archives form.search #query, body.search#room_archives form.search #query {margin-bottom: 0.15em}
+#oneColumn.errorPages .columnContainer {background: #fff; border: solid #eee; border-width: 1px 0}
+#oneColumn.errorPages .columnContent {padding-top: 1em; padding-bottom: 1em}
+#oneColumn.errorPages p {padding-bottom: 0.75em; color: #805f40; font-size: 144%; text-align: center}
+#oneColumn.errorPages form.search {padding: 0; background: none; border: none}
+body.guestHome #oneColumn {max-width: 100%}
+body.guestHome .columnContainer {position: relative; margin-bottom: 1.25em; padding: 0.75em 0; background: #fff url(http://2.assets.lingr.com/images/backgrounds/gradient-green.png.v1197607815) repeat-x left bottom; border: solid #eee; border-width: 1px 0}
+body.guestHome .columnContainer h2 {margin: 0 16px; padding: 0 0 0.15em; font-size: 182%; color: #793b00}
+body.guestHome #pageHeader {background: transparent url(http://1.assets.lingr.com/images/logo/tagline.gif.v1197607815) no-repeat right 58px}
+body.guestHome #pageHeader img {margin-left: 2px}
+body.guestHome #startChatting h2 {margin-bottom: 0.35em}
+body.guestHome #startChatting div h2, body.guestHome #startChatting div h2 a {margin: 0; color: #793b00}
+body.guestHome #startChatting div h2 a:focus, body.guestHome #startChatting div h2 a:hover {color: #cb7500}
+body.guestHome #startChatting div h2 {font-size: 144%; text-transform: lowercase; letter-spacing: 1px}
+body.guestHome #startChatting #hotRooms {float: left; width: 50%}
+body.guestHome #startChatting #hotRooms h2, body.guestHome #startChatting #hotRooms ul, body.guestHome #startChatting #hotRooms div.etcetera {margin: 0 8px 0 16px}
+body.guestHome #startChatting #hotRooms h2 {border: solid #eee; border-width: 0 1px}
+body.guestHome #startChatting #hotTags {float: right; width: 50%}
+body.guestHome #startChatting #hotTags h2, body.guestHome #startChatting #hotTags ul, body.guestHome #startChatting #hotTags div {width: auto; margin: 0 16px 0 16px}
+body.guestHome .columnContent {padding: 0}
+body.guestHome #startChatting #hotRooms .columnContent {background: #fff; border: solid #eee; border-width: 0 1px 1px}
+body.guestHome #startChatting #hotRooms .roomList .room {padding-right: 0.4em; padding-left: 0.4em}
+body.guestHome form.search {margin-bottom: 1.25em; background: #fff url(http://2.assets.lingr.com/images/backgrounds/gradient-green-short.png.v1197607815) repeat-x left bottom}
+body.guestHome form.search label {text-transform: lowercase}
+body.guestHome #radarModule {background: #fff url(http://2.assets.lingr.com/images/backgrounds/gradient-green-short.png.v1197607815) repeat-x left bottom; border-color: #eee; text-align: center}
+body.guestHome #radarModule * {display: inline; float: none; vertical-align: middle; position: relative; top: auto; left: auto; min-height: 0; margin: 0; padding: 0; background: none; border: none}
+body.guestHome #radarModule a:focus, body.guestHome #radarModule a:hover {background: none}
+body.guestHome #radarModule img {padding-right: 0.35em}
+body.guestHome #radarModule .name {font-size: 182%}
+body.guestHome #radarModule .tagline {font-size: 144%}
+body.guestHome #aboutLingr {padding-bottom: 1.1em; background-position: 0% 50%}
+body.guestHome #aboutLingr h2 {margin-bottom: 0.25em; font-size: 1.6em}
+body.guestHome #aboutLingr p {width: 40em; max-width: 90%; margin: 0 auto 0.5em; color: #333; font-size: 122%; line-height: 1.1}
+body.guestHome #footer {padding-top: 1.5em}
